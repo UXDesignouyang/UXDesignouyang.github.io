@@ -1,0 +1,24 @@
+header {
+  padding-top: 60px;
+}
+
+header .headerLeft {
+  padding: 0;
+}
+
+header .headerRight {
+  padding: 0;
+}
+
+footer {
+  margin: 150px 0 100px 0;
+}
+
+footer .myInfoLeft {
+  padding: 0;
+}
+
+footer .myInfoRight {
+  padding: 0;
+}
+/*# sourceMappingURL=common.css.map */

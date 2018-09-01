@@ -1,0 +1,246 @@
+@charset "UTF-8";
+header {
+  margin-bottom: 178px;
+}
+
+header .container .row {
+  padding-top: 70px;
+}
+
+header .container .row > div {
+  padding: 0;
+}
+
+header .container .row .headerLeft img {
+  width: 26px;
+}
+
+header .container .row .headerRight img {
+  width: 65px;
+}
+
+.textInfo {
+  margin-bottom: 200px;
+}
+
+.textInfo .container .row {
+  padding-left: 12px;
+}
+
+.textInfo .container .row .textBody div:nth-child(1) {
+  font-family: SimSun;
+  font-size: 52px;
+  line-height: 62px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.textInfo .container .row .textBody div:nth-child(2) {
+  font-family: SimSun;
+  font-size: 46px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.textInfo .container .row .textBody p {
+  font-family: SimSun;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 71.6px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.centreShow {
+  margin-bottom: 110px;
+}
+
+.centreShow .container .row .entreImg {
+  padding-bottom: 26px;
+}
+
+.centreShow .container .row .entreImg img {
+  width: 100%;
+}
+
+.centreShow .container .row .entreInfo .row .entreInfoLeft > div {
+  padding-bottom: 30px;
+}
+
+.centreShow .container .row .entreInfo .row .entreInfoLeft > div > span {
+  font-family: SimSun;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 28px;
+  letter-spacing: 0px;
+  color: #c6c6c6;
+}
+
+.centreShow .container .row .entreInfo .row .entreInfoLeft > div > div {
+  font-family: SimSun;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.centreShow .container .row .entreInfo .row .entreInfoRight > span {
+  font-family: SimSun;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 28px;
+  letter-spacing: 2.4px;
+  color: #000000;
+}
+
+.centreShow .container .row .entreInfo .row .entreInfoRight > div {
+  padding-top: 27px;
+  font-family: SimSun;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 28px;
+  letter-spacing: 1.8px;
+  color: #000000;
+}
+
+.showImg {
+  margin-bottom: 120px;
+}
+
+.showImg .container .showImgTitle {
+  padding-bottom: 40px;
+  font-family: SimSun;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #010101;
+}
+
+.showImg .container .showImgContent .showImgContentDown {
+  position: relative;
+}
+
+.showImg .container .showImgContent .showImgContentDown .showImgContentUp {
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.showImg .container .showImgContent .showImgContentDown .showImgContentUp img {
+  width: 18px;
+  height: 18px;
+  margin-left: 20px;
+}
+
+.showImg .container .showImgContent .showImgContentDown .showImgContentUpBtn {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.phoneShow {
+  margin-bottom: 122px;
+}
+
+.phoneShow .container .row > div {
+  height: 560px;
+  background-image: url("../images/app_img/iphone6.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 54px 10px 60px;
+}
+
+.phoneShow .container .row > div > div {
+  margin: 0 auto;
+  width: 251px;
+  height: 447px;
+  background-color: aqua;
+}
+
+.ShowImgThree .ShowImgThreeTitle {
+  padding-bottom: 50px;
+  font-family: SimSun;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.ShowImgThree .ShowImgThreeBody {
+  padding: 60px 71px;
+  background-image: url("../images/app_img/矩形12.png");
+}
+
+.ShowImgThree .ShowImgThreeBody #carousel-example-generic .carousel-inner .item img {
+  width: 100%;
+}
+
+.ShowImgThree ul {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  list-style: none;
+  padding: 0;
+}
+
+.ShowImgThree ul li {
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.ShowImgThree ul li img {
+  width: 100%;
+}
+
+.ShowImgFour {
+  padding-bottom: 120px;
+}
+
+.ShowImgFour .ShowImgFourTitle {
+  margin-bottom: 48px;
+  font-family: SimSun;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #000000;
+}
+
+.ShowImgFour .ShowImgFourBody {
+  margin-bottom: 70px;
+}
+
+.ShowImgFour .ShowImgFourBody > div {
+  padding: 0;
+}
+
+footer {
+  margin-bottom: 120px;
+}
+
+footer .row > div {
+  padding: 0px;
+  font-family: SimSun;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #000000;
+}
+/*# sourceMappingURL=app.css.map */

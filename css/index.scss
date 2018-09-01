@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+@font-face {
+  font-family: 'Didot';
+  src: url('../font/Didot.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+// 头部
+.header {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  // 左边logo
+  > .h_left {
+    position: relative;
+    cursor: pointer;
+    > img {
+      position: absolute;
+      left: 60px;
+      top: 0;
+    }
+  }
+  // 右边logo
+  > .h_right {
+    position: relative;
+    > img {
+      position: absolute;
+      right: 60px;
+      top: 0;
+      width: 56px;
+    }
+  }
+}
+// 轮播图
+.slideshow {
+  margin-bottom: 50px;
+  > .container {
+    // 轮播图里面
+    .carousel {
+      // 距离字体的距离
+      margin-bottom: 30px;
+      .carousel-inner {
+        .item {
+          > img {
+            width: 100%;
+          }
+        }
+      }
+      position: relative;
+      .btn-banner {
+        position: absolute;
+        right: 0px;
+        bottom: 0;
+        width: 150px;
+        height: 40px;
+        background-color: #fff;
+        box-shadow: 0px 1px 5px #888888;
+
+        > a {
+          > span {
+            font-size: 16px;
+            line-height: 40px;
+          }
+        }
+        > .left {
+          padding-left: 30px;
+        }
+        > .right {
+          padding-right: 30px;
+        }
+      }
+    }
+    // 字体
+    .showFont {
+      padding-bottom: 150px;
+      .showFont_a {
+        font-size: 40px;
+        font-family: 'Didot';
+        transition: margin 1s cubic-bezier(0.7, 0.3, 0, 1);
+      }
+    }
+    // 数字
+    .nums_banner {
+      position: relative;
+      > div {
+        position: absolute;
+        right: 0;
+        bottom: 70px;
+        font-size: 40px;
+        font-family: 'Didot';
+        transition: bottom 1s cubic-bezier(0.7, 0.3, 0, 1);
+        > span {
+          color: #ccc;
+        }
+      }
+    }
+  }
+}
+// 主页主体
+.content {
+  margin-bottom: 150px;
+  .container:nth-child(1) {
+    .mywork {
+      margin-bottom: 50px;
+      .work {
+        font-family: 'SimSun';
+        text-align: center;
+        font-size: 40px;
+        color: #000000;
+      }
+      .myitem {
+        padding-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+  .container:nth-child(2) {
+    .row {
+      > div {
+        > a {
+          font-family: 'PingFang SC';
+          width: 65%;
+          text-align: center;
+          font-size: 22px;
+          color: #000000;
+          > div:nth-child(2) {
+            margin-top: 25px;
+            margin-bottom: 18px;
+          }
+          > img {
+            margin: 0 auto;
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
+}
+// 我的关注
+.myattention {
+  .attention_left {
+    div {
+      font-family: 'SimSun';
+      font-size: 28px;
+    }
+    p {
+      font-family: 'SimSun';
+      font-size: 12px;
+      color: #000000;
+    }
+  }
+  .attention_right {
+    ul {
+      width: 700px;
+      li {
+        padding-top: 20px;
+        line-height: 48px;
+        border-bottom: 1px solid #dedede;
+        .news {
+          > span {
+            font-family: 'SimSun';
+            font-size: 20px;
+          }
+          > span:nth-child(2) {
+            padding-left: 20px;
+            color: #b5b5b5;
+          }
+        }
+      }
+    }
+  }
+}
+// 页面底部
+.footer {
+  margin-top: 300px;
+  margin-bottom: 100px;
+  .footer_left {
+    font-family: 'SimSun';
+  }
+  .footer_right {
+    font-family: 'SimSun';
+  }
+}
+
+// 侧边栏
+.nav {
+  opacity: 0;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0%;
+  background-color: #fff;
+  height: 100%;
+  transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+  padding-top: 90px;
+  > div {
+    transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+    opacity: 0;
+    padding-left: 30%;
+    .nav_up {
+      padding-bottom: 20%;
+      position: relative;
+      > img {
+        position: absolute;
+        left: -82px;
+        top: 0;
+        cursor: pointer;
+      }
+    }
+    .nav_middle {
+      > span {
+        color: #7f7f7f8c;
+        font-family: 'PingFang SC';
+      }
+      > ul {
+        padding-left: 0;
+        li {
+          position: relative;
+          span {
+            position: absolute;
+            left: 0;
+            top: 62%;
+            width: 0px;
+            height: 1px;
+            background-color: #000;
+            transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+          }
+          > a {
+            padding-left: 0px;
+            transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+          }
+          padding-top: 20px;
+          font-family: 'SimSun';
+          font-size: 38px;
+        }
+        > li:hover {
+          span {
+            width: 30px;
+          }
+          > a {
+            padding-left: 44px;
+          }
+        }
+      }
+    }
+    .nav_down {
+      // font-family: 'SimSun';
+      padding-top: 110px;
+      span {
+        padding-left: 50px;
+      }
+      > div:nth-child(1) {
+        font-size: 16px;
+        color: #ccc;
+      }
+      > div:nth-child(3) {
+        span {
+          padding-left: 85px;
+        }
+      }
+    }
+  }
+}
+.nav_open {
+  opacity: 1;
+  width: 50%;
+}
+.fullshade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+}

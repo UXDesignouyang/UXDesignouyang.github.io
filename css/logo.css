@@ -1,0 +1,24 @@
+.imgContent {
+  padding: 0;
+}
+
+.imgContent > img {
+  margin-top: 120px;
+}
+
+.logoEight .imgContent {
+  padding: 0;
+}
+
+.logoEight .imgContent > img {
+  margin-top: 26px;
+}
+
+.logoNine .imgContent {
+  padding: 0;
+}
+
+.logoNine .imgContent > img {
+  margin-top: 270px;
+}
+/*# sourceMappingURL=logo.css.map */
