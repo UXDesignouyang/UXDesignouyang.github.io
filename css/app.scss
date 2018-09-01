@@ -1,0 +1,254 @@
+// 头部
+header {
+  margin-bottom: 178px;
+  .container {
+    .row {
+      padding-top: 70px;
+      >div {
+          padding: 0;
+      }
+      .headerLeft {
+        img {
+          width: 26px;
+        }
+      }
+      .headerRight {
+        img {
+
+          width: 65px;
+        }
+      }
+    }
+  }
+}
+// 中间文字介绍部分
+.textInfo {
+  margin-bottom: 200px;
+  .container {
+    .row {
+      padding-left: 12px;
+      .textBody {
+        div:nth-child(1) {
+          font-family: SimSun;
+          font-size: 52px;
+          line-height: 62px;
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #000000;
+        }
+        div:nth-child(2) {
+          font-family: SimSun;
+          font-size: 46px;
+          font-weight: normal;
+          letter-spacing: 0px;
+          color: #000000;
+        }
+        p {
+          font-family: SimSun;
+          font-size: 22px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 71.6px;
+          letter-spacing: 0px;
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+// 第一张展示图
+.centreShow {
+  margin-bottom: 110px;
+  .container {
+    .row {
+      .entreImg {
+        padding-bottom: 26px;
+        img {
+          width: 100%;
+        }
+      }
+      .entreInfo {
+        .row {
+          .entreInfoLeft {
+            > div {
+              padding-bottom: 30px;
+              > span {
+                font-family: SimSun;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 28px;
+                letter-spacing: 0px;
+                color: #c6c6c6;
+              }
+              > div {
+                font-family: SimSun;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 36px;
+                letter-spacing: 0px;
+                color: #000000;
+              }
+            }
+          }
+          .entreInfoRight {
+            > span {
+              font-family: SimSun;
+              font-size: 24px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 28px;
+              letter-spacing: 2.4px;
+              color: #000000;
+            }
+            > div {
+              padding-top: 27px;
+              font-family: SimSun;
+              font-size: 18px;
+              font-weight: normal;
+              font-stretch: normal;
+              line-height: 28px;
+              letter-spacing: 1.8px;
+              color: #000000;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// 第二张展示图
+.showImg {
+  margin-bottom: 120px;
+  .container {
+    .showImgTitle {
+      padding-bottom: 40px;
+      font-family: SimSun;
+      font-size: 22px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #010101;
+    }
+    .showImgContent {
+      .showImgContentDown {
+        position: relative;
+        .showImgContentUp {
+          position: absolute;
+          left: 0;
+          top: 7px;
+          img {
+            width: 18px;
+            height: 18px;
+            margin-left: 20px;
+          }
+        }
+        .showImgContentUpBtn {
+          position: absolute;
+          left: 50%;
+          bottom: 50px;
+          border: 1px solid #ccc;
+          background-color: #fff;
+          transform: translateX(-50%);
+          padding: 5px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+// 移动端的展示
+.phoneShow {
+  margin-bottom: 122px;
+  .container {
+    .row {
+      > div {
+        height: 560px;
+        background-image: url('../images/app_img/iphone6.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 54px 10px 60px;
+        > div {
+          margin: 0 auto;
+          width: 251px;
+          height: 447px;
+          background-color: aqua;
+        }
+      }
+    }
+  }
+}
+// 第三张展示图
+.ShowImgThree {
+  .ShowImgThreeTitle {
+    padding-bottom: 50px;
+    font-family: SimSun;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+  .ShowImgThreeBody {
+    padding: 60px 71px;
+    background-image: url('../images/app_img/矩形12.png');
+    #carousel-example-generic {
+      .carousel-inner {
+        .item {
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  ul {
+    margin-top: 32px;
+    margin-bottom: 48px;
+    list-style: none;
+    padding: 0;
+    li {
+      padding-right: 10px;
+      cursor: pointer;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+// 第四张展示图
+.ShowImgFour {
+  padding-bottom: 120px;
+  .ShowImgFourTitle {
+    margin-bottom: 48px;
+    font-family: SimSun;
+    font-size: 22px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+  .ShowImgFourBody {
+    margin-bottom: 70px;
+    > div {
+      padding: 0;
+    }
+  }
+}
+// 页面底部
+footer {
+  margin-bottom: 120px;
+  .row {
+    > div {
+      padding: 0px;
+      font-family: SimSun;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      letter-spacing: 0px;
+      color: #000000;
+    }
+  }
+}

@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+@font-face {
+  font-family: 'Didot';
+  src: url("../font/Didot.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.header {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.header > .h_left {
+  position: relative;
+  cursor: pointer;
+}
+
+.header > .h_left > img {
+  position: absolute;
+  left: 60px;
+  top: 0;
+}
+
+.header > .h_right {
+  position: relative;
+}
+
+.header > .h_right > img {
+  position: absolute;
+  right: 60px;
+  top: 0;
+  width: 56px;
+}
+
+.slideshow {
+  margin-bottom: 50px;
+}
+
+.slideshow > .container .carousel {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.slideshow > .container .carousel .carousel-inner .item > img {
+  width: 100%;
+}
+
+.slideshow > .container .carousel .btn-banner {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  width: 150px;
+  height: 40px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 1px 5px #888888;
+          box-shadow: 0px 1px 5px #888888;
+}
+
+.slideshow > .container .carousel .btn-banner > a > span {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.slideshow > .container .carousel .btn-banner > .left {
+  padding-left: 30px;
+}
+
+.slideshow > .container .carousel .btn-banner > .right {
+  padding-right: 30px;
+}
+
+.slideshow > .container .showFont {
+  padding-bottom: 150px;
+}
+
+.slideshow > .container .showFont .showFont_a {
+  font-size: 40px;
+  font-family: 'Didot';
+  -webkit-transition: margin 1s cubic-bezier(0.7, 0.3, 0, 1);
+  transition: margin 1s cubic-bezier(0.7, 0.3, 0, 1);
+}
+
+.slideshow > .container .nums_banner {
+  position: relative;
+}
+
+.slideshow > .container .nums_banner > div {
+  position: absolute;
+  right: 0;
+  bottom: 70px;
+  font-size: 40px;
+  font-family: 'Didot';
+  -webkit-transition: bottom 1s cubic-bezier(0.7, 0.3, 0, 1);
+  transition: bottom 1s cubic-bezier(0.7, 0.3, 0, 1);
+}
+
+.slideshow > .container .nums_banner > div > span {
+  color: #ccc;
+}
+
+.content {
+  margin-bottom: 150px;
+}
+
+.content .container:nth-child(1) .mywork {
+  margin-bottom: 50px;
+}
+
+.content .container:nth-child(1) .mywork .work {
+  font-family: 'SimSun';
+  text-align: center;
+  font-size: 40px;
+  color: #000000;
+}
+
+.content .container:nth-child(1) .mywork .myitem {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.content .container:nth-child(2) .row > div > a {
+  font-family: 'PingFang SC';
+  width: 65%;
+  text-align: center;
+  font-size: 22px;
+  color: #000000;
+}
+
+.content .container:nth-child(2) .row > div > a > div:nth-child(2) {
+  margin-top: 25px;
+  margin-bottom: 18px;
+}
+
+.content .container:nth-child(2) .row > div > a > img {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.myattention .attention_left div {
+  font-family: 'SimSun';
+  font-size: 28px;
+}
+
+.myattention .attention_left p {
+  font-family: 'SimSun';
+  font-size: 12px;
+  color: #000000;
+}
+
+.myattention .attention_right ul {
+  width: 700px;
+}
+
+.myattention .attention_right ul li {
+  padding-top: 20px;
+  line-height: 48px;
+  border-bottom: 1px solid #dedede;
+}
+
+.myattention .attention_right ul li .news > span {
+  font-family: 'SimSun';
+  font-size: 20px;
+}
+
+.myattention .attention_right ul li .news > span:nth-child(2) {
+  padding-left: 20px;
+  color: #b5b5b5;
+}
+
+.footer {
+  margin-top: 300px;
+  margin-bottom: 100px;
+}
+
+.footer .footer_left {
+  font-family: 'SimSun';
+}
+
+.footer .footer_right {
+  font-family: 'SimSun';
+}
+
+.nav {
+  opacity: 0;
+  z-index: 999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 0%;
+  background-color: #fff;
+  height: 100%;
+  -webkit-transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+  transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+  padding-top: 90px;
+}
+
+.nav > div {
+  -webkit-transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+  transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+  opacity: 0;
+  padding-left: 30%;
+}
+
+.nav > div .nav_up {
+  padding-bottom: 20%;
+  position: relative;
+}
+
+.nav > div .nav_up > img {
+  position: absolute;
+  left: -82px;
+  top: 0;
+  cursor: pointer;
+}
+
+.nav > div .nav_middle > span {
+  color: #7f7f7f8c;
+  font-family: 'PingFang SC';
+}
+
+.nav > div .nav_middle > ul {
+  padding-left: 0;
+}
+
+.nav > div .nav_middle > ul li {
+  position: relative;
+  padding-top: 20px;
+  font-family: 'SimSun';
+  font-size: 38px;
+}
+
+.nav > div .nav_middle > ul li span {
+  position: absolute;
+  left: 0;
+  top: 62%;
+  width: 0px;
+  height: 1px;
+  background-color: #000;
+  -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav > div .nav_middle > ul li > a {
+  padding-left: 0px;
+  -webkit-transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.nav > div .nav_middle > ul > li:hover span {
+  width: 30px;
+}
+
+.nav > div .nav_middle > ul > li:hover > a {
+  padding-left: 44px;
+}
+
+.nav > div .nav_down {
+  padding-top: 110px;
+}
+
+.nav > div .nav_down span {
+  padding-left: 50px;
+}
+
+.nav > div .nav_down > div:nth-child(1) {
+  font-size: 16px;
+  color: #ccc;
+}
+
+.nav > div .nav_down > div:nth-child(3) span {
+  padding-left: 85px;
+}
+
+.nav_open {
+  opacity: 1;
+  width: 50%;
+}
+
+.fullshade {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  z-index: 98;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+  transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+}
+/*# sourceMappingURL=index.css.map */
