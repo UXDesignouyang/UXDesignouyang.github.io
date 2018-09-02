@@ -75,9 +75,9 @@ $(function() {
   function pageBody() {
     $(document).scroll(function() {
       var scrollTop = document.documentElement.scrollTop;
-      var logoContentOne = $('.logoContentOne').offset().top;
-      var logoContentTwo = $('.logoContentTwo').offset().top;
-      var logoContentThree = $('.logoContentThree').offset().top;
+      var logoContentOne = document.querySelector('.logoContentOne').offsetTop;
+      var logoContentTwo = document.querySelector('.logoContentTwo').offsetTop;
+      var logoContentThree = document.querySelector('.logoContentThree').offsetTop;
       if (scrollTop >= logoContentOne - 400) {
         $('.logoContentOne').css({ marginTop: '80px' });
         $('.logoContentOne .logoContent').css({ opacity: '1' });
