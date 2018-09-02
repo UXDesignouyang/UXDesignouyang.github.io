@@ -3,6 +3,10 @@ a:hover {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 header .topImg {
   padding: 0;
 }
@@ -11,60 +15,52 @@ header .topImg img {
   width: 100%;
 }
 
-.wineImg {
+.row .wineImg {
   padding: 0;
 }
 
-.wineImg img {
+.row .wineImg > img {
   width: 100%;
 }
 
-.wineInfo {
+.row .wineInfo {
   padding: 0;
-  padding-left: 174px;
-  padding-right: 174px;
 }
 
-.wineTiele {
-  padding-top: 624px;
-  font-family: PingFangSC-Medium;
+.row .wineInfo .wineInfoContent {
+  padding: 50% 20%;
+}
+
+.row .wineInfo .wineInfoContent .wineTiele {
   font-size: 26px;
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: 0px;
-  color: #000000;
+  font-family: PingFangSC-Medium;
 }
 
-.winep {
+.row .wineInfo .wineInfoContent .winep {
   padding-top: 54px;
+  padding-bottom: 40px;
   font-family: PingFangSC-Medium;
   font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
   line-height: 20px;
-  letter-spacing: 0px;
   color: #999999;
 }
 
-.winea {
+.row .wineInfo .wineInfoContent .winea {
+  display: block;
+  text-align: center;
   width: 136px;
   height: 42px;
   line-height: 42px;
-  text-align: center;
   background-image: url("../images/appInfo_img/矩形2.png");
   background-repeat: no-repeat;
-  display: block;
-  margin-top: 50px;
   font-family: PingFangSC-Regular;
   font-size: 20px;
-  font-weight: normal;
-  font-stretch: normal;
-  letter-spacing: 0px;
   color: #000000;
 }
 
 footer {
   padding-top: 180px;
+  padding-bottom: 160px;
 }
 
 footer p {

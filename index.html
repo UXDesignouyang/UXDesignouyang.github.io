@@ -9,6 +9,7 @@
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
   <title>主页</title>
   <link rel="stylesheet" href="./lib/css/bootstrap.css">
+  <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <!-- 侧边栏 -->
@@ -20,29 +21,38 @@
     <div class="nav_middle">
       <span>导航</span>
       <ul>
-        <li><span></span><a href="javascript:;">工作</a></li>
-        <li><span></span><a href="javascript:;">服务</a></li>
-        <li><span></span><a href="javascript:;">日志</a></li>
-        <li><span></span><a href="javascript:;">关于</a></li>
-        <li><span></span><a href="javascript:;">联系</a></li>
+        <li><span></span><a href="./logo.html">工作</a></li>
+        <li><span></span><a href="./logo.html">服务</a></li>
+        <li><span></span><a href="./logo.html">日志</a></li>
+        <li><span></span><a href="./logo.html">关于</a></li>
+        <li><span></span><a href="./logo.html">联系</a></li>
       </ul>
     </div>
     <div class="nav_down">
       <div>联系我</div>
-      <div>sisoy.com <span>电子邮箱: 386597482@qq.com</span></div>
-      <div>+86 <span>15073473972</span></div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">sisoy.com<br>电子邮箱: 386597482@qq.com</div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">+86 <span>15073473972</span></div>
+      </div>
     </div>
   </div>
 
 </div>
 
-<body style="overflow-x:hidden">
+<body>
   <div class="fullshade container-fluid"></div>
   <!-- 头部 -->
-  <div class="row header">
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 h_left"><img src="./images/Snipaste_2018-08-26_20-46-00.png" alt=""></div>
-    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 h_right"><img src="./images/暂定logo.png" alt=""></div>
-  </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="  col-lg-6 col-md-6 col-sm-6 col-xs-6 clearfix headerLeft">
+          <img class="pull-left navLeft" src="./images/app_img/导航icon.png" alt="">
+        </div>
+        <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6 clearfix headerRight">
+          <img class="pull-right" src="./images/app_img/暂定logo.png" alt="">
+        </div>
+      </div>
+  </header>
 
   <!-- 轮播图 -->
   <div class="slideshow">
@@ -88,161 +98,138 @@
         <div class="work">我的工作</div>
         <div class="myitem">欧阳的项目</div>
       </div>
-
-      <!-- <div class="row">
-          <div class="grid col-lg-4 col-md-3 col-sm-2 col-xs-1 clearfix">
-            <a href="javascript:;" class="pull-left">
-              <img src="./images/格子4.png" class="img-responsive" alt="">
-              <div>创意字体</div>
-              <div>设计</div>
-            </a>
-          </div>
-          <div class="grid col-lg-4 col-md-3 col-sm-2 col-xs-1 gridTwo">
-            <a href="javascript:;">
-              <img src="./images/格子5.png" class="img-responsive" alt="">
-              <div>AE趣味</div>
-              <div>动画制作</div>
-            </a></div>
-          <div class="grid col-lg-4 col-md-3 col-sm-2 col-xs-1 clearfix">
-            <a href="javascript:;" class="pull-right">
-              <img src="./images/格子6.png" class="img-responsive" alt="">
-              <div>CINEMA4D</div>
-              <div>场景搭建与建模</div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="grid col-lg-4 col-md-3 col-sm-2 col-xs-1 clearfix">
-            <a href="javascript:;" class="pull-left">
-              <img src="./images/格子7.png" class="img-responsive" alt="">
-              <div>企业网站</div>
-              <div>高端布局</div>
-            </a>
-          </div>
-          <div class="grid col-md-4col-lg-4 col-md-3 col-sm-2 col-xs-1 gridTwo">
-            <a href="javascript:;">
-              <img src="./images/格子8.png" class="img-responsive" alt="">
-              <div>摄影</div>
-              <div>日常拍写</div>
-            </a></div>
-        </div> -->
     </div>
-    <div class="container">
-      <div class="row">
-        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-          <a href="javascript:;">
-            <img src="./images/格子1.png" class="img-responsive" alt="">
-            <div>定制高端</div>
-            <div>APP</div>
-          </a>
+    <div class="container ">
+      <div class="row logoContentOne">
+        <div class=" col-lg-4 col-md-4 col-xs-12">
+          <div class="row">
+            <a href="./logo.html" class="col-lg-6 col-md-6">
+              <img src="./images/格子1.png" class="img-responsive logoContent" alt="">
+              <div>定制高端</div>
+              <div>APP</div>
+            </a>
+          </div>
         </div>
-        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-          <a href="javascript:;">
-            <img src="./images/格子2.png" class="img-responsive" alt="">
+        <div class=" col-lg-4 col-md-4 col-xs-12 ">
+          <a href="./logo.html">
+            <img class="img-responsive logoContent" src="./images/格子2.png" alt="">
             <div>LOGO</div>
             <div>设计</div>
           </a></div>
-        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <a href="javascript:;">
-            <img src="./images/格子3.png" class="img-responsive" alt="">
-            <div>电商店铺</div>
-            <div>装修</div>
-          </a>
+        <div class=" col-lg-4 col-md-4 col-xs-12">
+          <div class="row">
+
+            <a href="./logo.html" class="col-lg-4 col-md-4  col-lg-offset-4 col-md-offset-4 ">
+              <img src="./images/格子3.png" class="img-responsive logoContent" alt="">
+              <div>电商店铺</div>
+              <div>装修</div>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-          <a href="javascript:;">
-            <img src="./images/格子1.png" class="img-responsive" alt="">
-            <div>定制高端</div>
-            <div>APP</div>
-          </a>
+      <div class="row logoContentTwo">
+        <div class=" col-lg-4 col-md-4 col-xs-12">
+          <div class="row">
+            <a href="./logo.html" class="col-lg-6 col-md-6">
+              <img src="./images/格子4.png" class="img-responsive logoContent" alt="">
+              <div>定制高端</div>
+              <div>APP</div>
+            </a>
+          </div>
         </div>
-        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-          <a href="javascript:;">
-            <img src="./images/格子2.png" class="img-responsive" alt="">
+        <div class=" col-lg-4 col-md-4 col-xs-12 ">
+          <a href="./logo.html">
+            <img class="img-responsive logoContent" src="./images/格子5.png" alt="">
             <div>LOGO</div>
             <div>设计</div>
           </a></div>
-        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <a href="javascript:;">
-            <img src="./images/格子3.png" class="img-responsive" alt="">
-            <div>电商店铺</div>
-            <div>装修</div>
-          </a>
+        <div class=" col-lg-4 col-md-4 col-xs-12">
+          <div class="row">
+
+            <a href="./logo.html" class="col-lg-4 col-md-4  col-lg-offset-4 col-md-offset-4 ">
+              <img src="./images/格子6.png" class="img-responsive logoContent" alt="">
+              <div>电商店铺</div>
+              <div>装修</div>
+            </a>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-          <a href="javascript:;">
-            <img src="./images/格子1.png" class="img-responsive" alt="">
-            <div>定制高端</div>
-            <div>APP</div>
-          </a>
+      <div class="row logoContentThree">
+        <div class=" col-lg-4 col-md-4 col-xs-12">
+          <div class="row">
+            <a href="./logo.html" class="col-lg-6 col-md-6">
+              <img src="./images/格子7.png" class="img-responsive logoContent" alt="">
+              <div>定制高端</div>
+              <div>APP</div>
+            </a>
+          </div>
         </div>
-        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-          <a href="javascript:;">
-            <img src="./images/格子2.png" class="img-responsive" alt="">
+        <div class=" col-lg-4 col-md-4 col-xs-12 ">
+          <a href="./logo.html">
+            <img class="img-responsive logoContent" src="./images/格子8.png" alt="">
             <div>LOGO</div>
             <div>设计</div>
           </a></div>
-        <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <a href="javascript:;">
-            <img src="./images/格子3.png" class="img-responsive" alt="">
-            <div>电商店铺</div>
-            <div>装修</div>
-          </a>
-        </div>
       </div>
     </div>
   </div>
   <!-- 我的关注 -->
   <div class="myattention">
-    <div class="container clearfix">
-      <div class="attention_left pull-left">
-        <div>我的关注</div>
-        <p>最近的消息</p>
-      </div>
-      <div class="attention_right pull-right">
-        <ul>
-          <li>
-            <div class="news">
-              <span class="news_left">LOGO大师</span>
-              <span class="news_right">新大本营换LOGO了</span>
-            </div>
-          </li>
-          <li>
-            <div class="news">
-              <span class="news_left">字体帮</span>
-              <span class="news_right">liubinke感伤</span>
-            </div>
-          </li>
-          <li>
-            <div class="news">
-              <span class="news_left">UI巴巴</span>
-              <span class="news_right">2018正在流行的趋势</span>
-            </div>
-          </li>
-          <li>
-            <div class="news">
-              <span class="news_left">平面设计</span>
-              <span class="news_right">广告设计！有哪些独特？</span>
-            </div>
-          </li>
+    <div class="container ">
+      <div class="row">
+        <div class="attention_left col-lg-6 col-md-6 col-xs-12 text-left">
+          <div>我的关注</div>
+          <p>最近的消息</p>
+        </div>
+        <div class="attention_right col-lg-6 col-md-6 col-xs-12 ">
+          <ul>
+            <li>
+              <div class="news">
+                <span class="news_left">LOGO大师</span>
+                <span class="news_right">新大本营换LOGO了</span>
+              </div>
+            </li>
+            <li>
+              <div class="news">
+                <span class="news_left">字体帮</span>
+                <span class="news_right">liubinke感伤</span>
+              </div>
+            </li>
+            <li>
+              <div class="news">
+                <span class="news_left">UI巴巴</span>
+                <span class="news_right">2018正在流行的趋势</span>
+              </div>
+            </li>
+            <li>
+              <div class="news">
+                <span class="news_left">平面设计</span>
+                <span class="news_right">广告设计！有哪些独特？</span>
+              </div>
+            </li>
 
-        </ul>
+          </ul>
+        </div>
       </div>
-
     </div>
   </div>
   <!-- 底部 -->
-  <div class="footer ">
-    <div class="container clearfix">
-      <div class="footer_left pull-left">personal@sjsoy.com <span>+8615073473972</span></div>
-      <div class="footer_right pull-right">Copyright © 2016 - 2017 欧阳.</div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="myInfoLeft col-lg-6 col-md-6 col-sm-6 col-xs-6 text-left">
+          <div class="row">
+            <div class="col-sm-12 col-xs-12 text-left">contact@sjsoy.com</div>
+            <div class="col-sm-12 col-xs-12 text-left">+(86)15073473972</div>
+          </div>
+        </div>
+        <div class="myInfoRight col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+          <span class="col-sm-12 col-xs-12 text-right">COPYRLGHT</span>
+          <span class="col-sm-12 col-xs-12 text-right">©2017-2018 欧阳</span>
+        </div>
+      </div>
     </div>
-
-  </div>
+  </footer>
 </body>
 
 <script src="./lib/jquery.js"></script>

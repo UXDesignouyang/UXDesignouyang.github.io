@@ -28,11 +28,12 @@ $(function() {
       setTimeout(() => {
         $('.fullshade').hide();
       }, 800);
+      $('body').css('overflow-y', 'scroll');
     }
   }
   // 点击展开侧边栏
-  function setOnNav() {
-    $('.h_left').on('click', function() {
+  function setOnNav(e) {
+    $('header .navLeft').on('click', function() {
       $('.nav').addClass('nav_open');
       $('.fullshade').show();
       setTimeout(() => {
@@ -41,6 +42,7 @@ $(function() {
       setTimeout(() => {
         $('.fullshade').css('opacity', '1');
       }, 500);
+      $('body').css('overflow-y', 'hidden');
     });
   }
   // 轮播图部分
@@ -71,6 +73,50 @@ $(function() {
   }
   // 页面主体部分
   function pageBody() {
-    console.log(123);
+    $(document).scroll(function() {
+      var scrollTop = document.documentElement.scrollTop;
+      var logoContentOne = $('.logoContentOne').offset().top;
+      var logoContentTwo = $('.logoContentTwo').offset().top;
+      var logoContentThree = $('.logoContentThree').offset().top;
+      if (scrollTop >= logoContentOne - 400) {
+        $('.logoContentOne').css({ marginTop: '80px' });
+        $('.logoContentOne .logoContent').css({ opacity: '1' });
+        $('.logoContentOne .logoContent')
+          .siblings()
+          .css({ opacity: '1' });
+      } else {
+        $('.logoContentOne').css({ marginTop: '100px' });
+        $('.logoContentOne .logoContent').css({ opacity: '0' });
+        $('.logoContentOne .logoContent')
+          .siblings()
+          .css({ opacity: '0' });
+      }
+      if (scrollTop >= logoContentTwo - 400) {
+        $('.logoContentTwo').css({ marginTop: '80px' });
+        $('.logoContentTwo .logoContent').css({ opacity: '1' });
+        $('.logoContentTwo .logoContent')
+          .siblings()
+          .css({ opacity: '1' });
+      } else {
+        $(' .logoContentTwo').css({ marginTop: '100px' });
+        $('.logoContentTwo .logoContent').css({ opacity: '0' });
+        $('.logoContentTwo .logoContent')
+          .siblings()
+          .css({ opacity: '0' });
+      }
+      if (scrollTop >= logoContentThree - 400) {
+        $('.logoContentThree').css({ marginTop: '80px' });
+        $('.logoContentThree .logoContent').css({ opacity: '1' });
+        $('.logoContentThree .logoContent')
+          .siblings()
+          .css({ opacity: '1' });
+      } else {
+        $('.logoContentThree').css({ marginTop: '100px' });
+        $('.logoContentThree .logoContent').css({ opacity: '0' });
+        $('.logoContentThree .logoContent')
+          .siblings()
+          .css({ opacity: '0' });
+      }
+    });
   }
 });
