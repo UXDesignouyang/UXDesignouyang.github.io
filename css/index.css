@@ -1,10 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 ul {
   list-style: none;
 }
@@ -25,33 +18,6 @@ a:hover {
   font-style: normal;
 }
 
-.header {
-  margin-top: 80px;
-  margin-bottom: 50px;
-}
-
-.header > .h_left {
-  position: relative;
-  cursor: pointer;
-}
-
-.header > .h_left > img {
-  position: absolute;
-  left: 60px;
-  top: 0;
-}
-
-.header > .h_right {
-  position: relative;
-}
-
-.header > .h_right > img {
-  position: absolute;
-  right: 60px;
-  top: 0;
-  width: 56px;
-}
-
 .slideshow {
   margin-bottom: 50px;
 }
@@ -69,7 +35,7 @@ a:hover {
   position: absolute;
   right: 0px;
   bottom: 0;
-  width: 150px;
+  width: 160px;
   height: 40px;
   background-color: #fff;
   -webkit-box-shadow: 0px 1px 5px #888888;
@@ -94,8 +60,14 @@ a:hover {
 }
 
 .slideshow > .container .showFont .showFont_a {
-  font-size: 40px;
-  font-family: 'Didot';
+  font-family: Didot;
+  font-size: 42px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 70px;
+  letter-spacing: 4.2px;
+  color: #222222;
   -webkit-transition: margin 1s cubic-bezier(0.7, 0.3, 0, 1);
   transition: margin 1s cubic-bezier(0.7, 0.3, 0, 1);
 }
@@ -118,8 +90,9 @@ a:hover {
   color: #ccc;
 }
 
-.content {
-  margin-bottom: 150px;
+.content .container:nth-child(1) {
+  -webkit-transition: all 1s cubic-bezier(0.7, 0.3, 0, 1);
+  transition: all 1s cubic-bezier(0.7, 0.3, 0, 1);
 }
 
 .content .container:nth-child(1) .mywork {
@@ -138,7 +111,21 @@ a:hover {
   text-align: center;
 }
 
-.content .container:nth-child(2) .row > div > a {
+.content .container:nth-child(2) .logoContentThree {
+  margin-bottom: 300px;
+}
+
+.content .container:nth-child(2) > .row {
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  margin-top: 100px;
+}
+
+.content .container:nth-child(2) > .row > div {
+  padding: 0;
+}
+
+.content .container:nth-child(2) > .row > div a {
   font-family: 'PingFang SC';
   width: 65%;
   text-align: center;
@@ -146,14 +133,23 @@ a:hover {
   color: #000000;
 }
 
-.content .container:nth-child(2) .row > div > a > div:nth-child(2) {
+.content .container:nth-child(2) > .row > div a > div {
+  opacity: 0;
+  -webkit-transition: all 1000ms ease-out;
+  transition: all 1000ms ease-out;
+}
+
+.content .container:nth-child(2) > .row > div a > div:nth-child(2) {
   margin-top: 25px;
   margin-bottom: 18px;
 }
 
-.content .container:nth-child(2) .row > div > a > img {
+.content .container:nth-child(2) > .row > div a > img {
+  opacity: 0;
+  -webkit-transition: all 400ms ease-out;
+  transition: all 400ms ease-out;
   margin: 0 auto;
-  width: 65%;
+  width: 180px;
 }
 
 .myattention .attention_left div {
@@ -165,10 +161,6 @@ a:hover {
   font-family: 'SimSun';
   font-size: 12px;
   color: #000000;
-}
-
-.myattention .attention_right ul {
-  width: 700px;
 }
 
 .myattention .attention_right ul li {
@@ -187,19 +179,6 @@ a:hover {
   color: #b5b5b5;
 }
 
-.footer {
-  margin-top: 300px;
-  margin-bottom: 100px;
-}
-
-.footer .footer_left {
-  font-family: 'SimSun';
-}
-
-.footer .footer_right {
-  font-family: 'SimSun';
-}
-
 .nav {
   opacity: 0;
   z-index: 999;
@@ -211,26 +190,22 @@ a:hover {
   height: 100%;
   -webkit-transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
   transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
-  padding-top: 90px;
+  padding-top: 5%;
 }
 
 .nav > div {
   -webkit-transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
   transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
   opacity: 0;
-  padding-left: 30%;
+  padding-left: 20%;
 }
 
 .nav > div .nav_up {
-  padding-bottom: 20%;
-  position: relative;
+  cursor: pointer;
 }
 
-.nav > div .nav_up > img {
-  position: absolute;
-  left: -82px;
-  top: 0;
-  cursor: pointer;
+.nav > div .nav_middle {
+  padding-top: 15%;
 }
 
 .nav > div .nav_middle > span {
@@ -239,12 +214,13 @@ a:hover {
 }
 
 .nav > div .nav_middle > ul {
-  padding-left: 0;
+  padding-left: 12%;
 }
 
 .nav > div .nav_middle > ul li {
   position: relative;
-  padding-top: 20px;
+  height: 55px;
+  line-height: 55px;
   font-family: 'SimSun';
   font-size: 38px;
 }
@@ -252,7 +228,7 @@ a:hover {
 .nav > div .nav_middle > ul li span {
   position: absolute;
   left: 0;
-  top: 62%;
+  top: 50%;
   width: 0px;
   height: 1px;
   background-color: #000;
@@ -275,20 +251,12 @@ a:hover {
 }
 
 .nav > div .nav_down {
-  padding-top: 110px;
-}
-
-.nav > div .nav_down span {
-  padding-left: 50px;
+  padding-top: 25%;
 }
 
 .nav > div .nav_down > div:nth-child(1) {
   font-size: 16px;
   color: #ccc;
-}
-
-.nav > div .nav_down > div:nth-child(3) span {
-  padding-left: 85px;
 }
 
 .nav_open {

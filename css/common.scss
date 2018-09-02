@@ -1,18 +1,13 @@
 header {
-    padding-top: 60px;
-  .headerLeft {
-    padding: 0;
-  }
-  .headerRight {
-    padding: 0;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  img {
+    cursor: pointer;
   }
 }
 footer {
   margin: 150px 0 100px 0;
-  .myInfoLeft {
-    padding: 0;
-  }
-  .myInfoRight {
-    padding: 0;
-  }
+}
+body {
+  transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
 }

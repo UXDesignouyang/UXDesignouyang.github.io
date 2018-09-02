@@ -1,8 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 ul {
   list-style: none;
 }
@@ -18,31 +13,6 @@ a:hover {
   src: url('../font/Didot.ttf');
   font-weight: normal;
   font-style: normal;
-}
-// 头部
-.header {
-  margin-top: 80px;
-  margin-bottom: 50px;
-  // 左边logo
-  > .h_left {
-    position: relative;
-    cursor: pointer;
-    > img {
-      position: absolute;
-      left: 60px;
-      top: 0;
-    }
-  }
-  // 右边logo
-  > .h_right {
-    position: relative;
-    > img {
-      position: absolute;
-      right: 60px;
-      top: 0;
-      width: 56px;
-    }
-  }
 }
 // 轮播图
 .slideshow {
@@ -64,7 +34,7 @@ a:hover {
         position: absolute;
         right: 0px;
         bottom: 0;
-        width: 150px;
+        width: 160px;
         height: 40px;
         background-color: #fff;
         box-shadow: 0px 1px 5px #888888;
@@ -87,8 +57,14 @@ a:hover {
     .showFont {
       padding-bottom: 150px;
       .showFont_a {
-        font-size: 40px;
-        font-family: 'Didot';
+        font-family: Didot;
+        font-size: 42px;
+        font-weight: normal;
+        font-style: italic;
+        font-stretch: normal;
+        line-height: 70px;
+        letter-spacing: 4.2px;
+        color: #222222;
         transition: margin 1s cubic-bezier(0.7, 0.3, 0, 1);
       }
     }
@@ -111,8 +87,9 @@ a:hover {
 }
 // 主页主体
 .content {
-  margin-bottom: 150px;
   .container:nth-child(1) {
+    // margin-bottom: 180px;
+    transition: all 1s cubic-bezier(0.7, 0.3, 0, 1);
     .mywork {
       margin-bottom: 50px;
       .work {
@@ -128,21 +105,34 @@ a:hover {
     }
   }
   .container:nth-child(2) {
-    .row {
+    .logoContentThree {
+      margin-bottom: 300px;
+    }
+    > .row {
+      transition: all 1.5s ease-out;
+      margin-top: 100px;
+
       > div {
-        > a {
+        padding: 0;
+        a {
           font-family: 'PingFang SC';
           width: 65%;
           text-align: center;
           font-size: 22px;
           color: #000000;
+          > div {
+            opacity: 0;
+            transition: all 1000ms ease-out;
+          }
           > div:nth-child(2) {
             margin-top: 25px;
             margin-bottom: 18px;
           }
           > img {
+            opacity: 0;
+            transition: all 400ms ease-out;
             margin: 0 auto;
-            width: 65%;
+            width: 180px;
           }
         }
       }
@@ -164,7 +154,6 @@ a:hover {
   }
   .attention_right {
     ul {
-      width: 700px;
       li {
         padding-top: 20px;
         line-height: 48px;
@@ -183,17 +172,6 @@ a:hover {
     }
   }
 }
-// 页面底部
-.footer {
-  margin-top: 300px;
-  margin-bottom: 100px;
-  .footer_left {
-    font-family: 'SimSun';
-  }
-  .footer_right {
-    font-family: 'SimSun';
-  }
-}
 
 // 侧边栏
 .nav {
@@ -206,34 +184,30 @@ a:hover {
   background-color: #fff;
   height: 100%;
   transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
-  padding-top: 90px;
+  padding-top: 5%;
   > div {
     transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
     opacity: 0;
-    padding-left: 30%;
+    padding-left: 20%;
     .nav_up {
-      padding-bottom: 20%;
-      position: relative;
-      > img {
-        position: absolute;
-        left: -82px;
-        top: 0;
-        cursor: pointer;
-      }
+      cursor: pointer;
     }
     .nav_middle {
+      padding-top: 15%;
       > span {
         color: #7f7f7f8c;
         font-family: 'PingFang SC';
       }
       > ul {
-        padding-left: 0;
+        padding-left: 12%;
         li {
           position: relative;
+          height: 55px;
+          line-height: 55px;
           span {
             position: absolute;
             left: 0;
-            top: 62%;
+            top: 50%;
             width: 0px;
             height: 1px;
             background-color: #000;
@@ -243,7 +217,6 @@ a:hover {
             padding-left: 0px;
             transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
           }
-          padding-top: 20px;
           font-family: 'SimSun';
           font-size: 38px;
         }
@@ -258,19 +231,10 @@ a:hover {
       }
     }
     .nav_down {
-      // font-family: 'SimSun';
-      padding-top: 110px;
-      span {
-        padding-left: 50px;
-      }
+      padding-top: 25%;
       > div:nth-child(1) {
         font-size: 16px;
         color: #ccc;
-      }
-      > div:nth-child(3) {
-        span {
-          padding-left: 85px;
-        }
       }
     }
   }
