@@ -4,8 +4,8 @@ header {
   .container {
     .row {
       padding-top: 70px;
-      >div {
-          padding: 0;
+      > div {
+        padding: 0;
       }
       .headerLeft {
         img {
@@ -14,7 +14,6 @@ header {
       }
       .headerRight {
         img {
-
           width: 65px;
         }
       }
@@ -166,7 +165,7 @@ header {
     .row {
       > div {
         height: 560px;
-        background-image: url('../images/app_img/iphone6.png');
+        background-image: url("../images/app_img/iphone6.png");
         background-repeat: no-repeat;
         background-position: center;
         padding: 54px 10px 60px;
@@ -174,7 +173,24 @@ header {
           margin: 0 auto;
           width: 251px;
           height: 447px;
-          background-color: aqua;
+          position: relative;
+
+          overflow: hidden;
+          > div {
+    
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: -17px;
+            bottom: 0;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            > img {
+              display: block;
+              width: 100%;
+              height: auto;
+            }
+          }
         }
       }
     }
@@ -191,15 +207,59 @@ header {
     letter-spacing: 0px;
     color: #000000;
   }
-  .ShowImgThreeBody {
-    padding: 60px 71px;
-    background-image: url('../images/app_img/矩形12.png');
-    #carousel-example-generic {
-      .carousel-inner {
-        .item {
-          img {
-            width: 100%;
+  .row {
+    position: relative;
+    .ShowImgThreeBox {
+      transition: all 1s cubic-bezier(0.7, 0.3, 0, 1);
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      .ShowImgThreeBody {
+        padding: 60px 71px;
+        background-image: url("../images/app_img/矩形12.png");
+        #carousel-example-generic {
+          .carousel-inner {
+            .item {
+              img {
+                width: 100%;
+              }
+            }
           }
+        }
+      }
+    }
+    .leftBtn {
+      position: absolute;
+      left: 33px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+      color: #000;
+      div {
+        z-index: -1;
+        position: absolute;
+        left: 6px;
+        top: 49%;
+        width: 0px;
+        height: 2px;
+        background-color: #000;
+        transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+      }
+    }
+    .rightBtn {
+      position: absolute;
+      right: 21px;
+      top: 50%;
+      color: #000;
+      font-size: 20px;
+      span {
+        div {
+          z-index: -1;
+          position: absolute;
+          right: 6px;
+          top: 49%;
+          width: 0px;
+          height: 2px;
+          background-color: #000;
+          transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
         }
       }
     }
@@ -212,7 +272,11 @@ header {
     li {
       padding-right: 10px;
       cursor: pointer;
+      overflow: hidden;
       img {
+        background-color: rgba(0, 0, 0, 0.6);
+        transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+        transform: translateY(-99%);
         width: 100%;
       }
     }

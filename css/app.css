@@ -170,7 +170,24 @@ header .container .row .headerRight img {
   margin: 0 auto;
   width: 251px;
   height: 447px;
-  background-color: aqua;
+  position: relative;
+  overflow: hidden;
+}
+
+.phoneShow .container .row > div > div > div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: -17px;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.phoneShow .container .row > div > div > div > img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .ShowImgThree .ShowImgThreeTitle {
@@ -183,13 +200,66 @@ header .container .row .headerRight img {
   color: #000000;
 }
 
-.ShowImgThree .ShowImgThreeBody {
+.ShowImgThree .row {
+  position: relative;
+}
+
+.ShowImgThree .row .ShowImgThreeBox {
+  -webkit-transition: all 1s cubic-bezier(0.7, 0.3, 0, 1);
+  transition: all 1s cubic-bezier(0.7, 0.3, 0, 1);
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+          transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.ShowImgThree .row .ShowImgThreeBox .ShowImgThreeBody {
   padding: 60px 71px;
   background-image: url("../images/app_img/矩形12.png");
 }
 
-.ShowImgThree .ShowImgThreeBody #carousel-example-generic .carousel-inner .item img {
+.ShowImgThree .row .ShowImgThreeBox .ShowImgThreeBody #carousel-example-generic .carousel-inner .item img {
   width: 100%;
+}
+
+.ShowImgThree .row .leftBtn {
+  position: absolute;
+  left: 33px;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #000;
+}
+
+.ShowImgThree .row .leftBtn div {
+  z-index: -1;
+  position: absolute;
+  left: 6px;
+  top: 49%;
+  width: 0px;
+  height: 2px;
+  background-color: #000;
+  -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.ShowImgThree .row .rightBtn {
+  position: absolute;
+  right: 21px;
+  top: 50%;
+  color: #000;
+  font-size: 20px;
+}
+
+.ShowImgThree .row .rightBtn span div {
+  z-index: -1;
+  position: absolute;
+  right: 6px;
+  top: 49%;
+  width: 0px;
+  height: 2px;
+  background-color: #000;
+  -webkit-transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.5s cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .ShowImgThree ul {
@@ -202,9 +272,15 @@ header .container .row .headerRight img {
 .ShowImgThree ul li {
   padding-right: 10px;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .ShowImgThree ul li img {
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transform: translateY(-99%);
+          transform: translateY(-99%);
   width: 100%;
 }
 

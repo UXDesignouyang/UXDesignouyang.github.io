@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Trajan Color';
+  src: url("../font/Trajan.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+title {
+  font-family: 'Didot';
+}
 header {
   padding-top: 60px;
   padding-bottom: 80px;
