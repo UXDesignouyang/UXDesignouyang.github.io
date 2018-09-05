@@ -116,8 +116,8 @@ a:hover {
 }
 
 .content .container:nth-child(2) > .row {
-  -webkit-transition: all 400ms ease-out;
-  transition: all 400ms ease-out;
+  -webkit-transition: all 800ms ease-out;
+  transition: all 800ms ease-out;
   margin-top: 100px;
 }
 
@@ -135,8 +135,8 @@ a:hover {
 
 .content .container:nth-child(2) > .row > div a > div {
   opacity: 0;
-  -webkit-transition: all 400ms ease-out;
-  transition: all 400ms ease-out;
+  -webkit-transition: all 800ms ease-out;
+  transition: all 800ms ease-out;
 }
 
 .content .container:nth-child(2) > .row > div a > div:nth-child(2) {

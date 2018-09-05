@@ -78,44 +78,26 @@ $(function() {
       var logoContentOne = document.querySelector('.logoContentOne').offsetTop;
       var logoContentTwo = document.querySelector('.logoContentTwo').offsetTop;
       var logoContentThree = document.querySelector('.logoContentThree').offsetTop;
-      if (scrollTop >= logoContentOne - 400) {
+      if (scrollTop >= logoContentOne - 600) {
         $('.logoContentOne').css({ marginTop: '80px' });
         $('.logoContentOne .logoContent').css({ opacity: '1' });
         $('.logoContentOne .logoContent')
           .siblings()
           .css({ opacity: '1' });
-      } else {
-        $('.logoContentOne').css({ marginTop: '100px' });
-        $('.logoContentOne .logoContent').css({ opacity: '0' });
-        $('.logoContentOne .logoContent')
-          .siblings()
-          .css({ opacity: '0' });
       }
-      if (scrollTop >= logoContentTwo - 400) {
+      if (scrollTop >= logoContentTwo - 600) {
         $('.logoContentTwo').css({ marginTop: '80px' });
         $('.logoContentTwo .logoContent').css({ opacity: '1' });
         $('.logoContentTwo .logoContent')
           .siblings()
           .css({ opacity: '1' });
-      } else {
-        $(' .logoContentTwo').css({ marginTop: '100px' });
-        $('.logoContentTwo .logoContent').css({ opacity: '0' });
-        $('.logoContentTwo .logoContent')
-          .siblings()
-          .css({ opacity: '0' });
       }
-      if (scrollTop >= logoContentThree - 400) {
+      if (scrollTop >= logoContentThree - 600) {
         $('.logoContentThree').css({ marginTop: '80px' });
         $('.logoContentThree .logoContent').css({ opacity: '1' });
         $('.logoContentThree .logoContent')
           .siblings()
           .css({ opacity: '1' });
-      } else {
-        $('.logoContentThree').css({ marginTop: '100px' });
-        $('.logoContentThree .logoContent').css({ opacity: '0' });
-        $('.logoContentThree .logoContent')
-          .siblings()
-          .css({ opacity: '0' });
       }
     });
   }
