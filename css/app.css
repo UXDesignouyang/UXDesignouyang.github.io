@@ -67,6 +67,29 @@ header .container .row .headerRight img {
   width: 100%;
 }
 
+.centreShow .container .row > ul {
+  margin-top: 32px;
+  margin-bottom: 48px;
+  list-style: none;
+  padding-left: 15px;
+}
+
+.centreShow .container .row > ul li {
+  padding-right: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.centreShow .container .row > ul li img {
+  border-bottom: 1px solid #000;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transform: translateY(-99%);
+          transform: translateY(-99%);
+  width: 100px;
+}
+
 .centreShow .container .row .entreInfo .row .entreInfoLeft > div {
   padding-bottom: 30px;
 }
@@ -158,36 +181,12 @@ header .container .row .headerRight img {
   margin-bottom: 122px;
 }
 
-.phoneShow .container .row > div {
-  height: 560px;
-  background-image: url("../images/app_img/iphone6.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 54px 10px 60px;
+.phoneShow .phoneImgLeft {
+  text-align: center;
 }
 
-.phoneShow .container .row > div > div {
+.phoneShow .phoneImgLeft iframe {
   margin: 0 auto;
-  width: 251px;
-  height: 447px;
-  position: relative;
-  overflow: hidden;
-}
-
-.phoneShow .container .row > div > div > div {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: -17px;
-  bottom: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.phoneShow .container .row > div > div > div > img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .ShowImgThree .ShowImgThreeTitle {
