@@ -33,17 +33,47 @@
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif] -->
 </head>
+<!-- 侧边栏 -->
+<div class="nav container-fluid">
+    <div>
+        <div class="nav_up">
+            <img id="offNav" src="https://wx3.sinaimg.cn/large/006bozGegy1fv6ohgec6tj300t00c0s2.jpg" alt="">
+        </div>
+        <div class="nav_middle">
+            <span>导航</span>
+            <ul>
+                <li><span></span><a href="javascript:;">工作</a></li>
+                <li><span></span><a href="javascript:;">服务</a></li>
+                <li><span></span><a href="javascript:;">日志</a></li>
+                <li><span></span><a href="javascript:;">关于</a></li>
+                <li><span></span><a href="javascript:;">联系</a></li>
+            </ul>
+        </div>
+        <div class="nav_down">
+            <div>联系我</div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">sisoy.com<br>电子邮箱: 386597482@qq.com</div>
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">+86 <span>15073473972</span></div>
+            </div>
+        </div>
+    </div>
+
+</div>
 
 <body>
+    <!-- 遮罩层 -->
+    <div class="fullshade container-fluid"></div>
     <!-- 头部 -->
     <header>
         <div class="container">
             <div class="row">
                 <div class="headerLeft col-lg-6 col-md-6 col-sm-6 col-xs-6 clearfix">
-                    <img class="pull-left" src="./images/app_img/导航icon.png" alt="">
+                    <img class="pull-left" src="./images/app_img/导航icon.png" alt="" id="kaiNav">
                 </div>
                 <div class="headerRight col-lg-6 col-md-6 col-sm-6 col-xs-6 clearfix">
-                    <img class="pull-right" src="./images/app_img/暂定logo.png" alt="">
+                    <a href="./index.html">
+                        <img class="pull-right" src="./images/app_img/暂定logo.png" alt="">
+                    </a>
                 </div>
             </div>
     </header>
@@ -66,13 +96,18 @@
                 <!-- 展示图 -->
                 <div class="entreImg col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <img src="https://ws2.sinaimg.cn/large/006bozGegy1fv6op26qn7j30ws0hqtyf.jpg" alt="">
-                    <img src="https://ws2.sinaimg.cn/large/006bozGegy1fv6oplfj86j30ws0hqdul.jpg" style='display: none' alt="">
-                    <img src="https://wx3.sinaimg.cn/large/006bozGegy1fv6opv3aeqj30ws0hq1kx.jpg" style='display: none' alt="">
+                    <img src="https://ws2.sinaimg.cn/large/006bozGegy1fv6oplfj86j30ws0hqdul.jpg" style='display: none'
+                        alt="">
+                    <img src="https://wx3.sinaimg.cn/large/006bozGegy1fv6opv3aeqj30ws0hq1kx.jpg" style='display: none'
+                        alt="">
                 </div>
                 <ul class="clearfix centreShowUl">
-                    <li class="pull-left" style="opacity: 1"><img src="https://ws2.sinaimg.cn/large/006bozGegy1fv6op26qn7j30ws0hqtyf.jpg" alt=""></li>
-                    <li class="pull-left" style="opacity: .3"><img src="https://ws2.sinaimg.cn/large/006bozGegy1fv6oplfj86j30ws0hqdul.jpg" alt=""></li>
-                    <li class="pull-left" style="opacity: .3"><img src="https://wx3.sinaimg.cn/large/006bozGegy1fv6opv3aeqj30ws0hq1kx.jpg" alt=""></li>
+                    <li class="pull-left" style="opacity: 1"><img src="https://ws2.sinaimg.cn/large/006bozGegy1fv6op26qn7j30ws0hqtyf.jpg"
+                            alt=""></li>
+                    <li class="pull-left" style="opacity: .3"><img src="https://ws2.sinaimg.cn/large/006bozGegy1fv6oplfj86j30ws0hqdul.jpg"
+                            alt=""></li>
+                    <li class="pull-left" style="opacity: .3"><img src="https://wx3.sinaimg.cn/large/006bozGegy1fv6opv3aeqj30ws0hq1kx.jpg"
+                            alt=""></li>
                 </ul>
                 <!-- 详细信息 -->
                 <div class="entreInfo col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -115,7 +150,8 @@
                             <img src="./images/app_img/黄.png" alt="">
                             <a href="./appInfo.html"><img src="./images/app_img/绿.png" alt=""></a>
                         </div>
-                        <a href="./appInfo.html"><img src="https://ws2.sinaimg.cn/large/006bozGegy1fv6orcv860j30ws0ks4qp.jpg" alt="" style="width:100%"></a>
+                        <a href="./appInfo.html"><img src="https://ws2.sinaimg.cn/large/006bozGegy1fv6orcv860j30ws0ks4qp.jpg"
+                                alt="" style="width:100%"></a>
                         <!-- <a href="./appInfo.html" class="showImgContentUpBtn">精选红酒</a> -->
                     </div>
                 </div>
@@ -186,26 +222,32 @@
             </div>
             <div class="row ShowImgFourBody">
                 <div class="ShowImgFourLeft  col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6otwazl9j30fr09oaky.jpg" alt="">
+                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6otwazl9j30fr09oaky.jpg"
+                        alt="">
                 </div>
                 <div class="ShowImgFourrRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6ouc7guxj30fr09oqai.jpg" alt="">
+                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6ouc7guxj30fr09oqai.jpg"
+                        alt="">
                 </div>
             </div>
             <div class="row ShowImgFourBody">
                 <div class="ShowImgFourLeft  col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6ouonmsgj30fr09o0xx.jpg" alt="">
+                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6ouonmsgj30fr09o0xx.jpg"
+                        alt="">
                 </div>
                 <div class="ShowImgFourrRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6ouw29owj30fr09o13t.jpg" alt="">
+                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6ouw29owj30fr09o13t.jpg"
+                        alt="">
                 </div>
             </div>
             <div class="row ShowImgFourBody">
                 <div class="ShowImgFourLeft  col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="https://ws1.sinaimg.cn/large/006bozGegy1fv6ov40uqej30fr09odow.jpg" alt="">
+                    <img class="img-responsive" src="https://ws1.sinaimg.cn/large/006bozGegy1fv6ov40uqej30fr09odow.jpg"
+                        alt="">
                 </div>
                 <div class="ShowImgFourrRight col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="https://ws1.sinaimg.cn/large/006bozGegy1fv6ovdd6t5j30fr09o7dc.jpg" alt="">
+                    <img class="img-responsive" src="https://ws1.sinaimg.cn/large/006bozGegy1fv6ovdd6t5j30fr09o7dc.jpg"
+                        alt="">
                 </div>
             </div>
         </div>

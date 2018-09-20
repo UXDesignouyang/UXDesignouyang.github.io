@@ -7,6 +7,10 @@ $(function() {
     // window.onresize = function() {
     //   setHTML();
     // };
+    // 点击展开侧边栏
+    setOnNav();
+    // 点击关闭侧边栏
+    offNav();
   }
   //   // 动态改变长度单位
   // function setHTML() {
@@ -25,4 +29,39 @@ $(function() {
   //   // 赋值给HTML标签
   //   document.querySelector('html').style.fontSize = fz + 'px';
   // }
+    // 点击关闭侧边栏
+    function offNav() {
+      // 点击关闭侧边栏
+      $('.nav_up>img').on('click', function() {
+        setoffNav();
+      });
+      // 点击遮罩也可以关闭
+      $('.fullshade').on('click', function() {
+        setoffNav();
+      });
+      // 关闭侧边栏
+      function setoffNav() {
+        $('.nav').removeClass('nav_open');
+        $('.nav>div').css('opacity', '0');
+        $('.fullshade').css('opacity', '0');
+        setTimeout(() => {
+          $('.fullshade').hide();
+        }, 800);
+        $('body').css('overflow-y', 'scroll');
+      }
+    }
+    // 点击展开侧边栏
+    function setOnNav(e) {
+      $('#kaiNav').on('click', function() {
+        $('.nav').addClass('nav_open');
+        $('.fullshade').show();
+        setTimeout(() => {
+          $('.nav>div').css('opacity', '1');
+        }, 1000);
+        setTimeout(() => {
+          $('.fullshade').css('opacity', '1');
+        }, 500);
+        $('body').css('overflow-y', 'hidden');
+      });
+    }
 });
