@@ -1,50 +1,12 @@
 $(function() {
   init();
   function init() {
-    // 点击展开侧边栏
-    setOnNav();
-    // 点击关闭侧边栏
-    offNav();
     // 轮播图部分
     setBanner();
     // 页面主体部分
     pageBody();
   }
-  // 点击关闭侧边栏
-  function offNav() {
-    // 点击关闭侧边栏
-    $('.nav_up>img').on('click', function() {
-      setoffNav();
-    });
-    // 点击遮罩也可以关闭
-    $('.fullshade').on('click', function() {
-      setoffNav();
-    });
-    // 关闭侧边栏
-    function setoffNav() {
-      $('.nav').removeClass('nav_open');
-      $('.nav>div').css('opacity', '0');
-      $('.fullshade').css('opacity', '0');
-      setTimeout(() => {
-        $('.fullshade').hide();
-      }, 800);
-      $('body').css('overflow-y', 'scroll');
-    }
-  }
-  // 点击展开侧边栏
-  function setOnNav(e) {
-    $('header .navLeft').on('click', function() {
-      $('.nav').addClass('nav_open');
-      $('.fullshade').show();
-      setTimeout(() => {
-        $('.nav>div').css('opacity', '1');
-      }, 1000);
-      setTimeout(() => {
-        $('.fullshade').css('opacity', '1');
-      }, 500);
-      $('body').css('overflow-y', 'hidden');
-    });
-  }
+
   // 轮播图部分
   function setBanner() {
     $('#carousel-example-generic').on('slide.bs.carousel', function(event) {
@@ -73,11 +35,14 @@ $(function() {
   }
   // 页面主体部分
   function pageBody() {
-    $(document).scroll(function() {
-      var scrollTop = document.documentElement.scrollTop;
-      var logoContentOne = document.querySelector('.logoContentOne').offsetTop;
-      var logoContentTwo = document.querySelector('.logoContentTwo').offsetTop;
-      var logoContentThree = document.querySelector('.logoContentThree').offsetTop;
+    $(window).scroll(function() {
+      var logoContentOne = $(".logoContentOne").offset().top;
+      var logoContentTwo = $(".logoContentTwo").offset().top;
+      var logoContentThree = $(".logoContentThree").offset().top;
+      var scrollTop = document.documentElement.scrollTop || window.pageYOffset  || document.body.scrollTop
+      // var logoContentOne = document.querySelector('.logoContentOne').offsetTop;
+      // var logoContentTwo = document.querySelector('.logoContentTwo').offsetTop;
+      // var logoContentThree = document.querySelector('.logoContentThree').offsetTop;
       if (scrollTop >= logoContentOne - 600) {
         $('.logoContentOne').css({ marginTop: '80px' });
         $('.logoContentOne .logoContent').css({ opacity: '1' });

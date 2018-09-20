@@ -12,9 +12,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>app</title>
+    <title>logo</title>
 
-    <link rel="stylesheet" href="./lib/css/bootstrap.css">
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/logo.css">
 
@@ -34,17 +34,46 @@
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif] -->
 </head>
-
+<!-- 侧边栏 -->
+<div class="nav container-fluid">
+        <div>
+            <div class="nav_up">
+                <img id="offNav" src="https://wx3.sinaimg.cn/large/006bozGegy1fv6ohgec6tj300t00c0s2.jpg" alt="">
+            </div>
+            <div class="nav_middle">
+                <span>导航</span>
+                <ul>
+                    <li><span></span><a href="javascript:;">工作</a></li>
+                    <li><span></span><a href="javascript:;">服务</a></li>
+                    <li><span></span><a href="javascript:;">日志</a></li>
+                    <li><span></span><a href="javascript:;">关于</a></li>
+                    <li><span></span><a href="javascript:;">联系</a></li>
+                </ul>
+            </div>
+            <div class="nav_down">
+                <div>联系我</div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">sisoy.com<br>电子邮箱: 386597482@qq.com</div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">+86 <span>15073473972</span></div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
 <body>
+    <!-- 遮罩层 -->
+    <div class="fullshade container-fluid"></div>
     <!-- 头部 -->
     <header>
         <div class="container">
             <div class="row">
                 <div class="  col-lg-6 col-md-6 col-sm-6 col-xs-6 clearfix headerLeft">
-                    <img class="pull-left" src="./images/app_img/导航icon.png" alt="">
+                    <img class="pull-left" src="./images/app_img/导航icon.png" alt="" id="kaiNav">
                 </div>
                 <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6 clearfix headerRight">
-                    <img class="pull-right" src="./images/app_img/暂定logo.png" alt="">
+                    <a href="./index.html">
+                        <img class="pull-right" src="./images/app_img/暂定logo.png" alt="">
+                    </a>
                 </div>
             </div>
     </header>
@@ -52,7 +81,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img id="logoOne" class="img-responsive" src="./images/logo/1.png" alt="">
+                    <img id="logoOne" class="img-responsive" src="https://wx1.sinaimg.cn/large/006bozGegy1fv6p8g0nqpj30xc0i7h9c.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -61,7 +90,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/2.png" alt="">
+                    <img class="img-responsive" src="https://wx1.sinaimg.cn/large/006bozGegy1fv6p8qc1gkj30xc0mhkbw.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -70,7 +99,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/3.png" alt="">
+                    <img class="img-responsive" src="https://wx1.sinaimg.cn/large/006bozGegy1fv6p99fnypj30xc0mqq2w.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -79,7 +108,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/4.png" alt="">
+                    <img class="img-responsive" src="https://ws4.sinaimg.cn/large/006bozGegy1fv6p9legfwj30xc0mqglm.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -88,7 +117,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/5.png" alt="">
+                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6p9vbtsbj30xc0mqjtf.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -97,7 +126,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/6.png" alt="">
+                    <img class="img-responsive" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6pa41ctaj30xc0mq1kx.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -106,7 +135,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive center-block" class="center-block" src="./images/logo/7.png" alt="">
+                    <img class="img-responsive center-block" class="center-block" src="https://wx4.sinaimg.cn/large/006bozGegy1fv6paa9oh5j30op0i8q3l.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -115,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
-                    <img id="logoEight" class="img-responsive center-block" class="center-block" src="./images/logo/8.png" alt="">
+                    <img id="logoEight" class="img-responsive center-block" class="center-block" src="https://ws4.sinaimg.cn/large/006bozGegy1fv6palgp87j30k208qdfz.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -124,7 +153,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img id="logoNine" class="img-responsive" src="./images/logo/9.png" alt="">
+                    <img id="logoNine" class="img-responsive" src="https://ws3.sinaimg.cn/large/006bozGegy1fv6paswudzj30xc0mq7wh.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -133,7 +162,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/10.png" alt="">
+                    <img class="img-responsive" src="https://wx2.sinaimg.cn/large/006bozGegy1fv6pb0wrvsj30xc0mqdui.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -142,7 +171,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/11.png" alt="">
+                    <img class="img-responsive" src="https://ws4.sinaimg.cn/large/006bozGegy1fv6pbe1x5hj30xc0mqav2.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -152,7 +181,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/13.png" alt="">
+                    <img class="img-responsive" src="https://wx2.sinaimg.cn/large/006bozGegy1fv6pboapwej30xc0mqttc.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -161,7 +190,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/14.png" alt="">
+                    <img class="img-responsive" src="https://wx3.sinaimg.cn/large/006bozGegy1fv6pbuyngpj30xc0mq1kx.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -170,7 +199,7 @@
         <div class="container">
             <div class="row">
                 <div class="imgContent col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <img class="img-responsive" src="./images/logo/15.png" alt="">
+                    <img class="img-responsive" src="https://ws2.sinaimg.cn/large/006bozGegy1fv6pc2ugy8j30xc0mq7hi.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -188,8 +217,8 @@
             </div>
         </div>
     </footer>
-    <script src="./lib/jquery.js"></script>
-    <script src="./lib/js/bootstrap.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./js/common.js"></script>
 </body>
 
