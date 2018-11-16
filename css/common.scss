@@ -14,6 +14,18 @@ a:hover {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'STSongti-SC-Regular';
+  src: url('../font/Songti-SC-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Trajan';
+  src: url('../font/Trajan.otf');
+  font-weight: normal;
+  font-style: normal;
+}
 header {
   padding-top: 60px;
   padding-bottom: 80px;

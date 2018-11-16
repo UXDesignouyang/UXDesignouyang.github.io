@@ -1,0 +1,47 @@
+.title > div:nth-child(1) {
+  width: 100%;
+  font-family: Trajan;
+  font-size: 30px;
+  color: #000000;
+}
+
+.title > div:nth-child(2) {
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: STSongti-SC-Regular;
+}
+
+.show img {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.show p {
+  padding-top: 58px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.more > div:nth-child(1) {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  font-family: Trajan;
+  font-size: 36px;
+}
+
+.more > div:nth-child(2) img {
+  height: 392px;
+}
+
+.more > div:nth-child(3) img {
+  height: 392px;
+}
+
+.more > div:nth-child(4) {
+  padding-top: 20px;
+}
+
+.more img {
+  width: 100%;
+}
+/*# sourceMappingURL=c4d.css.map */
