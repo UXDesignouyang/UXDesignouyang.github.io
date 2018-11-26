@@ -1,0 +1,16 @@
+.img_first img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.img_last {
+  padding-top: 155px;
+}
+
+.img_last img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=add.css.map */
