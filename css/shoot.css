@@ -1,0 +1,92 @@
+.title > div:nth-child(1) {
+  width: 100%;
+  font-family: "Trajan";
+  font-size: 30px;
+  color: #000000;
+}
+
+.title > div:nth-child(2) {
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: "STSongti-SC-Regular";
+}
+
+.row_first {
+  padding-top: 106px;
+  padding-bottom: 85px;
+}
+
+.row_first img {
+  width: 100%;
+}
+
+.row_first_left > div {
+  font-size: 18px;
+  color: #c6c6c6;
+  line-height: 28px;
+}
+
+.row_first_left > div:nth-child(2n) {
+  font-size: 18px;
+  color: #000;
+  line-height: 36px;
+}
+
+.row_first_right {
+  padding-bottom: 148px;
+}
+
+.row_first_right > div {
+  padding-bottom: 10px;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.row_first_right > p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+.row_middle_left img {
+  width: 100%;
+}
+
+.row_middle_right {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 30%;
+}
+
+.row_middle_right_a {
+  padding-top: 80px;
+}
+
+.row_thirdly {
+  padding-top: 80px;
+}
+
+.row_thirdly img {
+  width: 100%;
+}
+
+.row_thirdly div {
+  padding-top: 84px;
+  font-size: 24px;
+  padding-bottom: 26px;
+}
+
+.row_thirdly p {
+  font-size: 18px;
+}
+
+.row_last > div:nth-child(1) {
+  padding-top: 135px;
+  padding-bottom: 68px;
+  font-size: 24px;
+}
+
+.row_last img {
+  width: 46%;
+}
+/*# sourceMappingURL=shoot.css.map */

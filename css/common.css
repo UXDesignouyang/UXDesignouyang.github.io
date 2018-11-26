@@ -18,6 +18,20 @@ a:hover {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'STSongti-SC-Regular';
+  src: url("../font/Songti-SC-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Trajan';
+  src: url("../font/Trajan.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 header {
   padding-top: 60px;
   padding-bottom: 80px;
@@ -133,5 +147,45 @@ body {
   opacity: 0;
   -webkit-transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
   transition: all 0.8s cubic-bezier(0.7, 0.3, 0, 1);
+}
+
+.dimback {
+  display: block;
+  background-color: #000;
+}
+
+.dimback img {
+  width: 100%;
+  opacity: 1;
+  filter: alpha(opacity=60);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.dimback > div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 16px;
+  color: #fff;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.3);
+  text-align: center;
+  opacity: 0;
+}
+
+.dimback:hover img {
+  opacity: 0.6;
+}
+
+.dimback:hover div {
+  opacity: 1;
 }
 /*# sourceMappingURL=common.css.map */
