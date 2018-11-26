@@ -112,72 +112,14 @@
         img {
           width: 100%;
         }
-        .mask {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.3);
-          color: #ffffff;
-          opacity: 0;
-          transition: all 0.8s;
-          > div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 230px;
-            height: 60px;
-            line-height: 60px;
-            border: 1px solid #fff;
-            font-size: 14px;
-            color: #fff;
-            background: rgba(255, 255, 255, 0.3);
-            text-align: center;
-          }
-        }
-      }
-      .theme_box_first a:hover .mask {
-        opacity: 1;
       }
       .theme_box_last {
         padding-top: 44px;
         height: 320px;
         overflow: hidden;
-        position: relative;
-        img {
-          width: 100%;
-        }
-        .mask {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-          background: rgba(0, 0, 0, 0.3);
-          color: #ffffff;
-          opacity: 0;
-          transition: all 0.8s;
-          > div {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 230px;
-            height: 60px;
-            line-height: 60px;
-            border: 1px solid #fff;
-            font-size: 14px;
-            color: #fff;
-            background: rgba(255, 255, 255, 0.3);
-            text-align: center;
-          }
-        }
-      }
-      .theme_box_last a:hover .mask {
-        opacity: 1;
-      }
+
+    }
+         
     }
   }
 }
