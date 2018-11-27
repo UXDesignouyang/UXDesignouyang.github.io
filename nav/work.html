@@ -7,11 +7,11 @@
   <!-- 理想视口 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
   <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-  <title>Sjsoy</title>
+  <title>Work</title>
   <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./css/common.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/work.css">
 </head>
 <!-- 侧边栏 -->
 <div class="nav container-fluid">
@@ -47,59 +47,27 @@
     <div class="container">
       <div class="row">
         <div class="  col-lg-6 col-md-6 col-sm-6 col-xs-6 clearfix headerLeft">
-          <img class="pull-left navLeft" src="./images/app_img/导航icon.png" alt="" id="kaiNav">
+          <img class="pull-left navLeft" src="../images/app_img/导航icon.png" alt="" id="kaiNav">
         </div>
         <div class=" col-lg-6 col-md-6 col-sm-6 col-xs-6 clearfix headerRight">
           <a href="./index.html">
-            <img class="pull-right" src="./images/app_img/暂定logo.png" alt="">
+            <img class="pull-right" src="../images/app_img/暂定logo.png" alt="">
           </a>
         </div>
       </div>
   </header>
 
-  <!-- 轮播图 -->
-  <div class="slideshow">
-    <div class="container">
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- 轮播的图片 -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item active">
-            <img src="https://wx3.sinaimg.cn/large/006bozGegy1fv6okwr6z9j318g0tntfe.jpg" alt="image">
-          </div>
-          <div class="item">
-            <img src="https://wx2.sinaimg.cn/large/006bozGegy1fv6ogzqtnhj318g0tntfk.jpg" alt="image">
-          </div>
-        </div>
-        <!-- 控制 -->
-        <div class="btn-banner clearfix">
-          <a class="left pull-left" href="#carousel-example-generic" data-slide="prev">
-            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
-          </a>
-          <a class="right pull-right" href="#carousel-example-generic" data-slide="next">
-            <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
-          </a>
-        </div>
-      </div>
-      <!-- 当前banner图的显示的文字 -->
-      <div class="showFont">
-        <div class="showFont_a">Whistling against the sun <br> It's like returning to the campus.</h1>
-        </div>
-        <div class="showFont_a" style="display: none;">I Love You <br> It's like returning to the campus.</h1>
-        </div>
-      </div>
-      <!-- 数字 -->
-      <div class="nums_banner">
-        <div>1<span>one</span></div>
-        <div style="display:none">2<span>two</span></div>
-      </div>
-    </div>
-  </div>
   <!-- 主页主要部分 -->
   <div class="content" style="overflow-x: hidden;">
     <div class="container">
       <div class="mywork">
         <div class="work">我的工作</div>
-        <div class="myitem">欧阳的项目</div>
+        <ul>
+          <li class="active">项目</li>
+          <li>网站</li>
+          <li>动画</li>
+          <li>字体</li>
+        </ul>
       </div>
     </div>
     <div class="container ">
@@ -184,46 +152,6 @@
       </div>
     </div>
   </div>
-  <!-- 我的关注 -->
-  <div class="myattention">
-    <div class="container ">
-      <div class="row">
-        <div class="attention_left col-lg-6 col-md-6 col-xs-12 text-left">
-          <div>我的关注</div>
-          <p>最近的消息</p>
-        </div>
-        <div class="attention_right col-lg-6 col-md-6 col-xs-12 ">
-          <ul>
-            <li>
-              <div class="news">
-                <span class="news_left">LOGO大师</span>
-                <span class="news_right">新大本营换LOGO了</span>
-              </div>
-            </li>
-            <li>
-              <div class="news">
-                <span class="news_left">字体帮</span>
-                <span class="news_right">liubinke感伤</span>
-              </div>
-            </li>
-            <li>
-              <div class="news">
-                <span class="news_left">UI巴巴</span>
-                <span class="news_right">2018正在流行的趋势</span>
-              </div>
-            </li>
-            <li>
-              <div class="news">
-                <span class="news_left">平面设计</span>
-                <span class="news_right">广告设计！有哪些独特？</span>
-              </div>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
   <!-- 底部 -->
   <footer>
     <div class="container">
@@ -245,7 +173,7 @@
 
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./js/index.js"></script>
-<script src="./js/common.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/work.js"></script>
 
 </html>
