@@ -1,66 +1,67 @@
 // 主页主体
 .content {
-    .container:nth-child(1) {
-      // margin-bottom: 180px;
-      transition: all 1s cubic-bezier(0.7, 0.3, 0, 1);
-      .mywork {
-        margin-bottom: 50px;
-        .work {
-          font-family: 'SimSun';
+  padding-top: 318px;
+  .container:nth-child(1) {
+    // margin-bottom: 180px;
+    transition: all 1s cubic-bezier(0.7, 0.3, 0, 1);
+    .mywork {
+      margin-bottom: 50px;
+      .work {
+        font-family: "SimSun";
         //   text-align: center;
-          font-size: 40px;
-          color: #000000;
+        font-size: 40px;
+        color: #000000;
+      }
+      ul {
+        padding: 0;
+        li {
+          float: left;
+          margin-right: 20px;
+          color: #ccc;
+          font-size: 16px;
+          // font-family: simsun;
+          font-family: STSongti-SC-Regular;
+          cursor: pointer;
         }
-       ul {
-         padding: 0;
-         li {
-           float: left;
-           margin-right: 20px;
-           color: #ccc;
-            font-size: 16px;
-            // font-family: simsun;
-            font-family: STSongti-SC-Regular;
-            cursor: pointer;
-          }
-         .active {
-           color: #000000;
-           border-bottom: 1px solid #000;
-         }
-       }
+        .active {
+          color: #000000;
+          border-bottom: 1px solid #000;
+        }
       }
     }
-    .container:nth-child(2) {
-      .logoContentThree {
-        margin-bottom: 300px;
-      }
-      > .row {
-        transition: all 800ms ease-out;
-        margin-top: 100px;
-  
-        > div {
-          padding: 0;
-          a {
-            font-family: 'PingFang SC';
-            width: 65%;
-            text-align: center;
-            font-size: 22px;
-            color: #000000;
-            > div {
-              opacity: 1;
-              transition: all 800ms ease-out;
-            }
-            > div:nth-child(2) {
-              margin-top: 25px;
-              margin-bottom: 18px;
-            }
-            > img {
-              opacity: 1;
-              transition: all 1000ms ease-out;
-              margin: 0 auto;
-              width: 180px;
-            }
+  }
+  .container:nth-child(2) {
+    .logoContentThree {
+      margin-bottom: 300px;
+    }
+    > .row {
+      transition: all 800ms ease-out;
+      margin-top: 100px;
+
+      > div {
+        padding: 0;
+        a {
+          font-family: "PingFang SC";
+          width: 65%;
+          text-align: center;
+          font-size: 22px;
+          color: #000000;
+          > div {
+            opacity: 1;
+            transition: all 800ms ease-out;
+          }
+          > div:nth-child(2) {
+            margin-top: 25px;
+            margin-bottom: 18px;
+          }
+          > img {
+            opacity: 1;
+            transition: all 1000ms ease-out;
+            margin: 0 auto;
+            width: 180px;
           }
         }
       }
     }
   }
+}
