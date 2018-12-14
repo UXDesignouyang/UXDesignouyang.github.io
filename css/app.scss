@@ -278,11 +278,12 @@ header {
     color: #000000;
   }
   .ShowImgFourBody {
-    margin-bottom: 30px;
+    margin: 0 auto;
+    margin-bottom: 13px;
     > div {
       padding: 0;
       img {
-        width: 100%;
+        width: 98%;
       }
     }
   }

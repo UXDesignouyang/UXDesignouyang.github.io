@@ -271,7 +271,8 @@ header {
 }
 
 .ShowImgFour .ShowImgFourBody {
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 13px;
 }
 
 .ShowImgFour .ShowImgFourBody > div {
@@ -279,7 +280,7 @@ header {
 }
 
 .ShowImgFour .ShowImgFourBody > div img {
-  width: 100%;
+  width: 98%;
 }
 
 footer {
