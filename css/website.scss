@@ -101,6 +101,24 @@
           width: 100%;
         }
       }
+      .webpage_img_i {
+        background: url(../images/website/iMac.png);
+        background-repeat: no-repeat;
+        height: 860px;
+        position: relative;
+        >div {
+          position: absolute;
+          top: 48px;
+          left: 37px;
+          width: 1110px;
+          overflow: hidden;
+          >div {
+            width: 1126px;
+            height: 458px;
+            overflow-y: scroll;
+          }  
+        }
+      }
       .theme_title {
         padding-top: 132px;
         font-size: 22px;
@@ -117,9 +135,7 @@
         padding-top: 44px;
         height: 320px;
         overflow: hidden;
-
-    }
-         
+      }
     }
   }
 }

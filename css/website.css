@@ -104,6 +104,27 @@
   width: 100%;
 }
 
+.centreShow .container .row .webpage_img_i {
+  background: url(../images/website/iMac.png);
+  background-repeat: no-repeat;
+  height: 860px;
+  position: relative;
+}
+
+.centreShow .container .row .webpage_img_i > div {
+  position: absolute;
+  top: 48px;
+  left: 37px;
+  width: 1110px;
+  overflow: hidden;
+}
+
+.centreShow .container .row .webpage_img_i > div > div {
+  width: 1126px;
+  height: 458px;
+  overflow-y: scroll;
+}
+
 .centreShow .container .row .theme_title {
   padding-top: 132px;
   font-size: 22px;

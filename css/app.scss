@@ -11,8 +11,9 @@ header {
       padding-left: 12px;
       .textBody {
         div:nth-child(1) {
-          font-family: SimSun;
-          font-size: 52px;
+          // font-family: SimSun;
+          font-family: Trajan;
+          font-size: 30px;
           line-height: 62px;
           font-weight: normal;
           font-stretch: normal;
@@ -20,15 +21,17 @@ header {
           color: #000000;
         }
         div:nth-child(2) {
-          font-family: SimSun;
-          font-size: 46px;
+          // font-family: SimSun;
+          font-family: Trajan;
+          font-size: 30px;
           font-weight: normal;
           letter-spacing: 0px;
           color: #000000;
         }
         p {
-          font-family: SimSun;
-          font-size: 22px;
+          // font-family: SimSun;
+          // font-size: 22px;
+          font-size: 16px;
           font-weight: normal;
           font-stretch: normal;
           line-height: 71.6px;
@@ -174,7 +177,7 @@ header {
   .phoneImgLeft {
     text-align: center;
     iframe {
-      margin: 0 auto
+      margin: 0 auto;
       // text-align: center;
     }
   }
