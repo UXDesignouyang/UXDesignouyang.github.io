@@ -56,6 +56,10 @@
   text-align: center;
   font-size: 32px;
   padding-top: 30%;
+  -webkit-transform: translateX(980px);
+          transform: translateX(980px);
+  -webkit-transition: 0.8s all;
+  transition: 0.8s all;
 }
 
 .row_middle_right_a {
@@ -84,6 +88,7 @@
   padding-top: 135px;
   padding-bottom: 68px;
   font-size: 24px;
+  font-family: "Trajan";
 }
 
 .row_last img {

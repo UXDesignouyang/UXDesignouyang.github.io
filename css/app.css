@@ -13,8 +13,8 @@ header {
 }
 
 .textInfo .container .row .textBody div:nth-child(1) {
-  font-family: SimSun;
-  font-size: 52px;
+  font-family: Trajan;
+  font-size: 30px;
   line-height: 62px;
   font-weight: normal;
   font-stretch: normal;
@@ -23,16 +23,15 @@ header {
 }
 
 .textInfo .container .row .textBody div:nth-child(2) {
-  font-family: SimSun;
-  font-size: 46px;
+  font-family: Trajan;
+  font-size: 30px;
   font-weight: normal;
   letter-spacing: 0px;
   color: #000000;
 }
 
 .textInfo .container .row .textBody p {
-  font-family: SimSun;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: normal;
   font-stretch: normal;
   line-height: 71.6px;
@@ -271,7 +270,8 @@ header {
 }
 
 .ShowImgFour .ShowImgFourBody {
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 13px;
 }
 
 .ShowImgFour .ShowImgFourBody > div {
@@ -279,7 +279,7 @@ header {
 }
 
 .ShowImgFour .ShowImgFourBody > div img {
-  width: 100%;
+  width: 98%;
 }
 
 footer {

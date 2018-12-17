@@ -47,6 +47,11 @@ header {
         font-family: PingFangSC-Regular;
         font-size: 20px;
         color: #000000;
+        transition: all .8s;
+      }
+      .winea:hover {
+        transform: translateY(-2px);
+        box-shadow: 0px 0px 7px 0px #000;
       }
     }
   }
