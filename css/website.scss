@@ -106,17 +106,51 @@
         background-repeat: no-repeat;
         height: 860px;
         position: relative;
-        >div {
+        > div {
           position: absolute;
           top: 48px;
           left: 37px;
           width: 1110px;
           overflow: hidden;
-          >div {
+          > div {
             width: 1126px;
             height: 458px;
             overflow-y: scroll;
-          }  
+          }
+        }
+      }
+      .webpage_img_l {
+        background: url(../images/website/1.1.png);
+        background-repeat: no-repeat;
+        height: 724px;
+        position: relative;
+        overflow: hidden;
+        > div {
+          position: absolute;
+          top: 30px;
+          left: 0;
+          width: 545px;
+          > div {
+            height: 724px;
+            overflow-y: scroll;
+          }
+        }
+      }
+      .webpage_img_r {
+        background: url(../images/website/2.2.png);
+        background-repeat: no-repeat;
+        height: 724px;
+        position: relative;
+        overflow: hidden;
+        > div {
+          position: absolute;
+          top: 30px;
+          left: 0;
+          width: 545px;
+          > div {
+            height: 724px;
+            overflow-y: scroll;
+          }
         }
       }
       .theme_title {

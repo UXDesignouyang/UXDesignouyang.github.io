@@ -44,39 +44,42 @@
   }
 }
 .row_middle_left {
-    img {
-        width: 100%;
-    }
+  img {
+    width: 100%;
+  }
 }
 .row_middle_right {
-    text-align: center;
-    font-size: 32px;
-    padding-top: 30%;
+  text-align: center;
+  font-size: 32px;
+  padding-top: 30%;
+  transform: translateX(980px);
+  transition: 0.8s all;
 }
 .row_middle_right_a {
-    padding-top: 80px
+  padding-top: 80px;
 }
 .row_thirdly {
-    padding-top: 80px;
-    img{
-        width: 100%;
-    }
-    div {
-        padding-top: 84px;
-        font-size: 24px;
-        padding-bottom: 26px;
-    }
-    p {
-        font-size: 18px;
-    }
+  padding-top: 80px;
+  img {
+    width: 100%;
+  }
+  div {
+    padding-top: 84px;
+    font-size: 24px;
+    padding-bottom: 26px;
+  }
+  p {
+    font-size: 18px;
+  }
 }
 .row_last {
-    >div:nth-child(1){
-        padding-top: 135px;
-        padding-bottom: 68px;
-        font-size: 24px;
-    }
-    img {
-        width: 46%;
-    }
+  > div:nth-child(1) {
+    padding-top: 135px;
+    padding-bottom: 68px;
+    font-size: 24px;
+    font-family: "Trajan";
+  }
+  img {
+    width: 46%;
+  }
 }

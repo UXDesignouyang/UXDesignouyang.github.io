@@ -125,6 +125,46 @@
   overflow-y: scroll;
 }
 
+.centreShow .container .row .webpage_img_l {
+  background: url(../images/website/1.1.png);
+  background-repeat: no-repeat;
+  height: 724px;
+  position: relative;
+  overflow: hidden;
+}
+
+.centreShow .container .row .webpage_img_l > div {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 545px;
+}
+
+.centreShow .container .row .webpage_img_l > div > div {
+  height: 724px;
+  overflow-y: scroll;
+}
+
+.centreShow .container .row .webpage_img_r {
+  background: url(../images/website/2.2.png);
+  background-repeat: no-repeat;
+  height: 724px;
+  position: relative;
+  overflow: hidden;
+}
+
+.centreShow .container .row .webpage_img_r > div {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 545px;
+}
+
+.centreShow .container .row .webpage_img_r > div > div {
+  height: 724px;
+  overflow-y: scroll;
+}
+
 .centreShow .container .row .theme_title {
   padding-top: 132px;
   font-size: 22px;
